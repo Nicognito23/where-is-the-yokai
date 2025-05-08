@@ -1,0 +1,561 @@
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  background-image: url('../Images/Background/niveau1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home-header {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+
+.home-header h1 {
+  color: #ffbf66;
+  text-shadow: 
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+    animation: neonPulse 2s infinite alternate;
+    
+}
+
+.yokai-floating {
+  width: 150px;             /* Taille raisonnable */
+  position: absolute;       /* Les positionner librement */
+  top: 80px;                /* Ajuster pour qu'ils soient alignés verticalement avec le titre */
+  animation: floatYokai 3s ease-in-out infinite alternate; /* Flottement */
+}
+
+.yokai-left {
+  left: 10%;                /* Plus proche du bord gauche sans coller */
+}
+
+.yokai-right {
+  right: 10%;               /* Plus proche du bord droit sans coller */
+}
+
+
+
+
+ .subtitle {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  color:rgb(255, 255, 255);
+  opacity: 0.85;
+  color: #ffbf66;
+  text-shadow: 
+  0 0 5px #b24e1d,
+  0 0 10px #6a4b36,
+  0 0 20px #6a4b36,
+  0 0 30px #30261f;
+    animation: neonPulse 2s infinite alternate;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  
+
+}
+
+
+.buttons-container button {
+  
+  font-family: 'Pixelify Sans', sans-serif;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.6rem;         /* agrandir le texte */
+  padding: 12px 24px;        /* agrandir le bouton autour du texte */
+  width: 200px;              /* uniformiser la largeur */
+  white-space: normal;       /* autorise le retour à la ligne */
+  text-align: center; 
+  background-color: #5d6c56;
+  color: #ffbf66;
+  text-shadow: 
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+    box-shadow: 
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+  
+}
+
+
+.buttons-container button:hover {
+  background-color: #ffbf66; 
+  color: #ffbf66;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.05);
+}
+
+.play-button {
+  font-family: 'Pixelify Sans', sans-serif;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  padding: 12px 24px;
+  width: 150px;
+  white-space: normal;
+  text-align: center;
+  background-color: #5d6c56;
+  color: #ffbf66;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #ffbf66;
+  color: #ffbf66;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.rules-container {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.rules ul {
+  font-size: 1.1rem;
+  text-align: left;        /* Le texte sera aligné à gauche */
+  padding-left: 20px;      /* On décale un peu pour éviter que ça colle trop au bord */
+  max-width: 700px;        /* Largeur maximale du bloc pour éviter qu'il soit trop large */
+  margin: 0 auto;          /* Centre le bloc UL lui-même sur la page */
+  line-height: 1.6;        /* Espace entre les lignes plus agréable */
+  color: #ffbf66;
+  text-shadow: 
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+    animation: neonPulse 2s infinite alternate;
+}
+
+.rules {
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+  margin-top: 20px;
+  text-align: center; /* pour centrer ton texte de règles */
+  
+}
+
+.rules.show {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  pointer-events: none; /* empêche de cliquer quand invisible */
+}
+
+.game-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #ffbf66;
+  text-shadow: 
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+    animation: neonPulse 2s infinite alternate;
+  
+}
+
+
+
+/* === PAGE JEU === */
+
+body.game-mode {
+  font-family: 'Pixelify Sans', sans-serif;
+  background-image: url('../Images/Background/Niveau1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+body.game-mode::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* UI haut (vies + cible) */
+#game-ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin-top: 20px;
+  color: #ffbf66;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  font-size: 1.2rem;
+  font-family: 'Pixelify Sans', sans-serif;
+  z-index: 2;
+}
+
+.ui-separator {
+  height: 3px;
+  background: linear-gradient(to right, #30261f, #b24e1d);
+  margin: 10px 30px;
+  border-radius: 4px;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36;
+}
+
+.header-center {
+  font-size: 1.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+#target-yokai {
+  width: 100px;
+  height: auto;
+  border: 2px solid #ffbf66;
+  border-radius: 10px;
+  background-color: #f1d4a2;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36;
+}
+
+
+/* === Overlay de lancement de niveau === */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#level-label {
+  font-size: 3.8rem;
+  color: #ffbf66;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  animation: neonPulse 2s infinite alternate;
+}
+
+#start-level-btn {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  background-color: #5d6c56;
+  color: #ffbf66;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+  cursor: pointer;
+}
+
+#start-level-btn:hover {
+  background-color: #ffbf66;
+  color: #5d6c56;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.menu-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 15px;
+  z-index: 20;
+  position: relative;
+  margin: 20px
+}
+
+.menu-btn, #save-game {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5d6c56;
+  color: #ffbf66;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+}
+
+.menu-btn:hover,
+#save-game:hover {
+  background-color: #ffbf66;
+  color: #5d6c56;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Plateau de jeu */
+#game-board {
+  position: relative;
+  min-height: 600px;
+  padding: 40px;
+}
+
+/* Yokai générés */
+.yokai-img {
+  width: 48px;
+  height: auto;
+  pointer-events: auto;
+  z-index: 5;
+  position: absolute;
+  cursor: pointer;
+}
+
+.yokai-img:hover {
+  transform: scale(1.2);
+}
+
+
+.yokai-wrong {
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.level-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(20, 20, 20, 0.85);
+  color: #ffbf66;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+  box-shadow: 0 0 25px #6a4b36;
+  z-index: 100;
+}
+
+.level-message a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #5d6c56;
+  color: #ffbf66;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #6a4b36;
+  font-family: 'Pixelify Sans', sans-serif;
+  transition: 0.2s;
+}
+
+.level-message a:hover {
+  background-color: #ffbf66;
+  color: #5d6c56;
+  transform: scale(1.05);
+}
+
+#game-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#game-over .game-over-content {
+  background-color: #1e1e1e;
+  color: #ffbf66;
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000aa;
+  animation: neonPulse 2s infinite alternate;
+}
+
+#game-over .game-over-content h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+#game-over .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#game-over .buttons button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: #5d6c56;
+  color: #ffbf66;
+  font-family: 'Pixelify Sans', sans-serif;
+  border: none;
+  cursor: pointer;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+  transition: transform 0.2s ease;
+}
+
+#game-over .buttons button:hover {
+  background-color: #ffbf66;
+  color: #5d6c56;
+  transform: scale(1.05);
+}
+
+.next-level-btn {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #55776d;
+  color: #f8d196;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-shadow:
+    0 0 5px #b24e1d,
+    0 0 10px #6a4b36,
+    0 0 20px #6a4b36,
+    0 0 30px #30261f;
+  box-shadow:
+    0 0 5px #b24e1d,
+    0 0 15px #6a4b36,
+    0 0 25px #6a4b36;
+  animation: neonPulse 2s infinite alternate;
+  
+}
+
+.next-level-btn:hover {
+  transform: scale(1.05);
+  background-color: #679589;
+}
+
+
+
+
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #b24e1d,
+      0 0 10px #6a4b36,
+      0 0 20px #6a4b36,
+      0 0 30px #6a4b36;
+  }
+  50% {
+    text-shadow: 
+      0 0 2px #6a4b36,
+      0 0 4px #6a4b36,
+      0 0 8px #6a4b36,
+      0 0 15px #6a4b36;
+  }
+
+
+}
+
+@keyframes floatYokai {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+

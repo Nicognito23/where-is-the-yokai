@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Where is the Yōkai – Game</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Pixelify+Sans:wght@400..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+      <!-- Main CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- JavaScript -->
+      <script src="js/script.js" defer></script>
+   </head>
+   <body class="game-mode">
+      <!-- Boutons : Back + Save -->
+      <div class="menu-actions">
+         <a href="index.html" class="menu-btn">
+         <i class="fa-solid fa-arrow-left"></i> Back to Menu
+         </a>
+         <button id="save-game" class="menu-btn">
+         <i class="fa-solid fa-floppy-disk"></i> Save Game
+         </button>
+      </div>
+      <!-- UI de jeu : vies + yōkai cible -->
+      <div id="game-ui" class="hidden">
+         <div class="header-center">
+            <span id="lives">❤️❤️❤️</span>
+         </div>
+         <div class="header-right">
+            <span>Target Yōkai:</span>
+            <img id="target-yokai" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Target Yōkai" width="50">
+         </div>
+      </div>
+      <div class="ui-separator"></div>
+      <!-- Écran d’attente du niveau -->
+      <div id="level-overlay" class="overlay">
+         <h2 id="level-label">Level 1</h2>
+         <button id="start-level-btn">Start</button>
+      </div>
+      <!-- Zone de jeu -->
+      <main id="game-board"></main>
+      <div id="game-over" class="hidden">
+         <div class="game-over-content">
+            <h2>Game Over</h2>
+            <div class="buttons">
+               <button id="restart-btn">Restart</button>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
