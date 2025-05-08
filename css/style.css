@@ -1,6 +1,6 @@
 body {
   font-family: 'Pixelify Sans', sans-serif;
-  background-image: url('Images/Background/Niveau1.png');
+  background-image: url('../Images/Background/Niveau1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ body {
 
 body.game-mode {
   font-family: 'Pixelify Sans', sans-serif;
-  background-image: url('Images/Background/Niveau1.png');
+  background-image: url('../Images/Background/Niveau1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
