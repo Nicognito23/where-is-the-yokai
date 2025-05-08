@@ -1,6 +1,6 @@
 body {
   font-family: 'Pixelify Sans', sans-serif;
-  background-image: url('../Images/Background/niveau1.png');
+  background-image: url('Images/Background/Niveau1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ body {
 
 body.game-mode {
   font-family: 'Pixelify Sans', sans-serif;
-  background-image: url('../Images/Background/Niveau1.png');
+  background-image: url('Images/Background/Niveau1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -528,9 +528,6 @@ body.game-mode::before {
   background-color: #679589;
 }
 
-
-
-
 @keyframes neonPulse {
   0%, 100% {
     text-shadow: 
@@ -546,8 +543,6 @@ body.game-mode::before {
       0 0 8px #6a4b36,
       0 0 15px #6a4b36;
   }
-
-
 }
 
 @keyframes floatYokai {

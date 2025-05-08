@@ -19,27 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const gameOverDiv = document.getElementById('game-over');
 
   const yokaiList = [
-    '../Images/Yokai/akaname.svg', '../Images/Yokai/akaneko.svg', '../Images/Yokai/amabi.svg',
-    '../Images/Yokai/amenonna.svg', '../Images/Yokai/aoandon.svg', '../Images/Yokai/ashiarai.svg',
-    '../Images/Yokai/azukiarai.svg', '../Images/Yokai/bakekujira.svg', '../Images/Yokai/betobeto.svg',
-    '../Images/Yokai/cyclope.svg', '../Images/Yokai/dodomeki.svg', '../Images/Yokai/enenra.svg',
-    '../Images/Yokai/futakuchi.svg', '../Images/Yokai/gashadokuro.svg', '../Images/Yokai/gazuhyaki.svg',
-    '../Images/Yokai/gyuki.svg', '../Images/Yokai/hitotsumekozo.svg', '../Images/Yokai/hyosube.svg',
-    '../Images/Yokai/inugami.svg', '../Images/Yokai/jinmenken.svg', '../Images/Yokai/jorugomu.svg',
-    '../Images/Yokai/kamikiri.svg', '../Images/Yokai/kappa.svg', '../Images/Yokai/karasutengu.svg',
-    '../Images/Yokai/kasaobake.svg', '../Images/Yokai/kawanokami.svg', '../Images/Yokai/kitsune.svg',
-    '../Images/Yokai/korainobozu.svg', '../Images/Yokai/kudan.svg', '../Images/Yokai/kurobozu.svg',
-    '../Images/Yokai/mokumokuren.svg', '../Images/Yokai/namahage.svg', '../Images/Yokai/noderabo.svg',
-    '../Images/Yokai/nue.svg', '../Images/Yokai/nuppepo.svg', '../Images/Yokai/nurarihyon.svg',
-    '../Images/Yokai/nyudo.svg', '../Images/Yokai/okiku.svg', '../Images/Yokai/onamazu.svg',
-    '../Images/Yokai/oni.svg', '../Images/Yokai/orochi.svg', '../Images/Yokai/ouni.svg',
-    '../Images/Yokai/rokurokubi.svg', '../Images/Yokai/sankai.svg', '../Images/Yokai/shirime.svg',
-    '../Images/Yokai/shojo.svg', '../Images/Yokai/sunekosuri.svg', '../Images/Yokai/tengu.svg',
-    '../Images/Yokai/tenonne.svg', '../Images/Yokai/tofukozo.svg', '../Images/Yokai/tsukumogami.svg',
-    '../Images/Yokai/tsushigumo.svg', '../Images/Yokai/ubagabi.svg', '../Images/Yokai/ubume.svg',
-    '../Images/Yokai/umibozu.svg', '../Images/Yokai/ushioni.svg', '../Images/Yokai/wanyudo.svg',
-    '../Images/Yokai/yamachichi.svg', '../Images/Yokai/yamamba.svg', '../Images/Yokai/yamawarara.svg',
-    '../Images/Yokai/yamawaro.svg', '../Images/Yokai/yukionna.svg'
+    'Images/Yokai/akaname.svg', 'Images/Yokai/akaneko.svg', 'Images/Yokai/amabi.svg',
+    'Images/Yokai/amenonna.svg', 'Images/Yokai/aoandon.svg', 'Images/Yokai/ashiarai.svg',
+    'Images/Yokai/azukiarai.svg', 'Images/Yokai/bakekujira.svg', 'Images/Yokai/betobeto.svg',
+    'Images/Yokai/cyclope.svg', 'Images/Yokai/dodomeki.svg', 'Images/Yokai/enenra.svg',
+    'Images/Yokai/futakuchi.svg', 'Images/Yokai/gashadokuro.svg', 'Images/Yokai/gazuhyaki.svg',
+    'Images/Yokai/gyuki.svg', 'Images/Yokai/hitotsumekozo.svg', 'Images/Yokai/hyosube.svg',
+    'Images/Yokai/inugami.svg', 'Images/Yokai/jinmenken.svg', 'Images/Yokai/jorugomu.svg',
+    'Images/Yokai/kamikiri.svg', 'Images/Yokai/kappa.svg', 'Images/Yokai/karasutengu.svg',
+    'Images/Yokai/kasaobake.svg', 'Images/Yokai/kawanokami.svg', 'Images/Yokai/kitsune.svg',
+    'Images/Yokai/korainobozu.svg', 'Images/Yokai/kudan.svg', 'Images/Yokai/kurobozu.svg',
+    'Images/Yokai/mokumokuren.svg', 'Images/Yokai/namahage.svg', 'Images/Yokai/noderabo.svg',
+    'Images/Yokai/nue.svg', 'Images/Yokai/nuppepo.svg', 'Images/Yokai/nurarihyon.svg',
+    'Images/Yokai/nyudo.svg', 'Images/Yokai/okiku.svg', 'Images/Yokai/onamazu.svg',
+    'Images/Yokai/oni.svg', 'Images/Yokai/orochi.svg', 'Images/Yokai/ouni.svg',
+    'Images/Yokai/rokurokubi.svg', 'Images/Yokai/sankai.svg', 'Images/Yokai/shirime.svg',
+    'Images/Yokai/shojo.svg', 'Images/Yokai/sunekosuri.svg', 'Images/Yokai/tengu.svg',
+    'Images/Yokai/tenonne.svg', 'Images/Yokai/tofukozo.svg', 'Images/Yokai/tsukumogami.svg',
+    'Images/Yokai/tsushigumo.svg', 'Images/Yokai/ubagabi.svg', 'Images/Yokai/ubume.svg',
+    'Images/Yokai/umibozu.svg', 'Images/Yokai/ushioni.svg', 'Images/Yokai/wanyudo.svg',
+    'Images/Yokai/yamachichi.svg', 'Images/Yokai/yamamba.svg', 'Images/Yokai/yamawarara.svg',
+    'Images/Yokai/yamawaro.svg', 'Images/Yokai/yukionna.svg'
   ];
 
   function getNonOverlappingPosition(usedPositions, minDistance = 60) {
@@ -66,11 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getRandomBackground() {
     const backgrounds = [
-      '../Images/Background/Niveau1.png', '../Images/Background/Niveau2.png',
-      '../Images/Background/Niveau3.png', '../Images/Background/Niveau4.png',
-      '../Images/Background/Niveau5.png', '../Images/Background/Niveau6.png',
-      '../Images/Background/Niveau7.png', '../Images/Background/Niveau8.png',
-      '../Images/Background/Niveau9.png', '../Images/Background/Niveau10.png'
+      'Images/Background/Niveau1.png', 'Images/Background/Niveau2.png',
+      'Images/Background/Niveau3.png', 'Images/Background/Niveau4.png',
+      'Images/Background/Niveau5.png', 'Images/Background/Niveau6.png',
+      'Images/Background/Niveau7.png', 'Images/Background/Niveau8.png',
+      'Images/Background/Niveau9.png', 'Images/Background/Niveau10.png'
     ];
     return backgrounds[Math.floor(Math.random() * backgrounds.length)];
   }
@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             case 5: generateLevel5(); break;
           }
         });
+        
         msg.appendChild(nextBtn);
       } else {
         localStorage.removeItem('nextLevel');
